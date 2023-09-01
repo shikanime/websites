@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../assets/logo.webp";
+
+export const prerender = true;
+---
+
+<html lang="en">
+	<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Infinity Horizons</title>
+    <meta name="description" content="Where ideas collide and imagination soars, we are proud dreamers on the mission to make them a reality" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+	</head>
+	<body>
+    <div class="hero min-h-screen">
+      <div class="hero-content text-center flex-col space-y-4">
+        <Image
+          src={Logo}
+          alt="logo"
+          width="150"
+          height="150"
+          class="mx-auto"
+		  loading="eager"
+        />
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Infinity Horizons</h1>
+          <p class="py-6">
+            Where ideas collide and imagination soars, we are proud dreamers on
+            the mission to make them a reality.
+          </p>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>
