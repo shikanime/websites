@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import Hero from "../components/Hero.astro";
 import IntroSection from "../components/IntroSection.astro";
 import Footer from "../components/Footer.astro";
+import ProjectsSection from "../components/ProjectsSection.astro";
 
 export const prerender = true;
 ---
@@ -19,12 +20,17 @@ export const prerender = true;
     />
   </head>
   <body>
-    <div class="max-h-screen snap snap-y snap-mandatory overflow-y-scroll scroll-smooth">
+    <div
+      class="max-h-screen snap snap-y snap-mandatory overflow-y-scroll scroll-smooth"
+    >
       <div class="snap-start">
         <Hero />
       </div>
-      <div class="snap-start grid place-items-center">
+      <div class="snap-start">
         <IntroSection />
+      </div>
+      <div class="snap-start">
+        <ProjectsSection />
       </div>
       <div class="snap-start">
         <Footer />

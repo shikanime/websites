@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../assets/logo.webp";
+import ProjectElkiaLogo from "../assets/project-elkia-logo.webp";
+import ShikanimeStudioLogo from "../assets/shikanime-studio-logo.webp";
+---
+
+<section
+  id="project-elkia"
+  class="min-h-screen w-full flex flex-col items-center justify-center"
+>
+  <div class="flex gap-12">
+      <Image
+        src={Logo}
+        alt="Infinity Horizons Logo"
+        width="150"
+        height="150"
+        class="mx-auto"
+        loading="eager"
+        quality="max"
+      />
+    <Image
+      src={ProjectElkiaLogo}
+      alt="Project Elkia Logo"
+      width="150"
+      height="150"
+      class="mx-auto"
+      loading="eager"
+      quality="max"
+    />
+    <Image
+      src={ShikanimeStudioLogo}
+      alt="Shianime Studio Logo"
+      width="150"
+      height="150"
+      class="mx-auto"
+      loading="eager"
+      quality="max"
+    />
+  </div>
+</section>
