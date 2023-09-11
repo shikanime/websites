@@ -1,12 +1,13 @@
 ---
 import "@fontsource-variable/inter";
-import { Image } from "astro:assets";
-import Logo from "../assets/logo.webp";
+import Hero from "../components/Hero.astro";
+import IntroSection from "../components/IntroSection.astro";
+import Footer from "../components/Footer.astro";
 
 export const prerender = true;
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -18,25 +19,10 @@ export const prerender = true;
     />
   </head>
   <body>
-    <div class="hero min-h-screen">
-      <div class="hero-content text-center flex-col space-y-4">
-        <Image
-          src={Logo}
-          alt="logo"
-          width="150"
-          height="150"
-          class="mx-auto"
-          loading="eager"
-          quality="max"
-        />
-        <div class="max-w-md">
-          <h1 class="text-5xl font-bold">Infinity Horizons</h1>
-          <p class="py-6">
-            Where ideas collide and imagination soars, we are proud dreamers on
-            the mission to make them a reality.
-          </p>
-        </div>
-      </div>
+    <Hero />
+    <div class="grid place-items-center">
+      <IntroSection />
     </div>
+    <Footer />
   </body>
 </html>
