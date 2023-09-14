@@ -1,4 +1,5 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+import { fontFamily } from "tailwindcss/defaultTheme";
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter Variable", ...fontFamily.sans],
       },
     },
   },
   daisyui: {
     themes: ["light"],
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
 };
