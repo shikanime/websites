@@ -1,34 +1,25 @@
 ---
 import { Image } from "astro:assets";
-import Logo from "../assets/shikanime-studio-logo.webp";
+import Logo from "../assets/header-logo.webp";
 ---
 
-<div class="hero min-h-screen">
+<div class="hero min-h-screen bg-base-100">
   <div class="hero-content">
-    <div class="flex flex-col items-center gap-y-8">
+    <div class="flex flex-col items-center gap-y-8 w-2/3">
       <Image
         src={Logo}
         alt="logo"
-        width="150"
-        height="150"
         class="mx-auto"
         loading="eager"
         quality="max"
       />
-      <div class="flex max-w-md flex-col gap-4 text-center">
-        <h1 class="text-5xl font-bold">Shikanime Studio</h1>
-        <p>
-          Where ideas collide and imagination soars, we are proud dreamers on
-          the mission to make them a reality.
-        </p>
-      </div>
       <a href="#intro">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
-          stroke="currentColor"
+          stroke="#f5712c"
           class="h-6 w-6"
         >
           <path
