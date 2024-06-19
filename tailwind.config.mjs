@@ -12,7 +12,13 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: ["light"],
+    themes: [
+      "light",
+      {
+        primary: "#4C51BF",
+        secondary: "#B78670",
+      },
+    ],
   },
   plugins: [daisyui],
 };
