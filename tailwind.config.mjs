@@ -13,11 +13,13 @@ module.exports = {
   },
   daisyui: {
     themes: [
-      "light",
       {
-        primary: "#4C51BF",
-        secondary: "#B78670",
+        newfuture: {
+          primary: "#F5712C",
+          "base-100": "#F6F6F6",
+        },
       },
+      "light",
     ],
   },
   plugins: [daisyui],
