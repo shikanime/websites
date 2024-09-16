@@ -3,6 +3,7 @@ import "@fontsource-variable/inter";
 import { ViewTransitions } from "astro:transitions";
 import Hero from "../components/Hero.astro";
 import Footer from "../components/Footer.astro";
+import IntroSection from "../components/IntroSection.astro";
 
 export const prerender = true;
 ---
@@ -40,6 +41,7 @@ export const prerender = true;
   <body>
     <div class="max-h-screen overflow-y-scroll scroll-smooth">
       <Hero />
+      <IntroSection />
       <Footer />
     </div>
   </body>
