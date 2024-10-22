@@ -6,5 +6,5 @@
 
 ## Websites
 
-Hey 🌸 I'm Shikanime Deva, this repository hold some of the websites I run on my
-domain.
+Hey 🌸 I'm Shikanime Deva, this repository holds some of the small websites I
+run on my domain.
