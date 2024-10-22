@@ -3,5 +3,10 @@
   "workspaces": [
     "packages/shikanime.studio",
     "packages/links.shikanime.studio"
-  ]
+  ],
+  "devDependencies": {
+    "@prettier/plugin-xml": "^3.4.1",
+    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-tailwindcss": "^0.5.4"
+  }
 }
