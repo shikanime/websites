@@ -51,15 +51,23 @@
                 "*.mjs"
                 "*.ts"
                 "*.tsx"
+                "*.webmanifest"
+                "*.xml"
                 "*.yaml"
               ];
               settings.plugins = [
+                "@prettier/plugin-xml"
                 "prettier-plugin-astro"
                 "prettier-plugin-tailwindcss"
               ];
             };
           };
           settings.global.excludes = [
+            "*.ico"
+            "*.png"
+            "*.svg"
+            "*.txt"
+            "*.webp"
             "**/node_modules"
           ];
         };
